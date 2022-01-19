@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Form from '../components/joinForm.js'
+import WillAttend from '../components/WillAttend.js'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <h1>Codecademy Meeting</h1>
       <h4>Will you be joining the next meeting?</h4>
-      <Form />
+      <WillAttend />
     </div>
   )
 }

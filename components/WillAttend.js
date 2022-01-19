@@ -1,12 +1,12 @@
 import React from 'react'
-import formStyles from '../styles/Form.module.css'
+import willAttendStyles from '../styles/willAttend.module.css'
 
-const Form = () => {
+const WillAttend = () => {
     const submitChoice = async event => {
         event.preventDefault()
     
         const res = await fetch(
-          '/api/hello',
+          '/api/submit',
           {
             body: JSON.stringify({
               name: event.target.name.value
@@ -22,7 +22,7 @@ const Form = () => {
     }
 
     return (
-    <div className={formStyles.main}>
+    <div className={willAttendStyles.main}>
         <form onSubmit={submitChoice}>
 
             <label htmlFor="name">Name</label>
@@ -34,4 +34,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default WillAttend
