@@ -1,4 +1,0 @@
-/*
-CREATE TABLE IF NOT EXISTS attending ( name TEXT NOT NULL );
-CREATE TABLE IF NOT EXISTS meetings ( date DATE UNIQUE NOT NULL );
-*/

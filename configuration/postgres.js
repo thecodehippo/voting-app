@@ -13,6 +13,6 @@ const getPoolConfig = () => {
     })
 }
 
-const pool = getPoolConfig();
+const db = getPoolConfig();
 
-export default pool;
+export default db;
