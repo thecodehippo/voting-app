@@ -6,7 +6,7 @@ const WillAttend = () => {
         event.preventDefault()
     
         const res = await fetch(
-          '/api/submit',
+          '/api/names',
           {
             body: JSON.stringify({
               name: event.target.name.value
